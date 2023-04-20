@@ -1,0 +1,321 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.app {
+  display: flex;
+  width: 100%;
+  height: 150vh;
+}
+
+.aside {
+  flex: 0 1 25%;
+  background-color: #f5f5f5;
+}
+
+.aside ul {
+  list-style: none;
+  padding-left: 20px;
+}
+
+main {
+  flex: 1 1 75%;
+  background-color: #e0e0e0;
+}
+
+.aside,
+.widget-item,
+.widget-item-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.aside {
+    gap: 16px;
+}
+
+.top-aside{
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.widget{
+  margin-top: 0%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.widget-item-container{
+  margin-top: 15px;
+}
+
+.widget-item {
+    gap: 5px;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.widget-item-name1,
+.widget-item-name2 {
+    font-size: 14px;
+    font-weight: 600;
+
+}
+
+.widget-item-balance1,
+.widget-item-balance2 {
+    font-size: 12px;
+}
+
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 16px;
+  margin-left: 16px;
+}
+
+
+.icons, .icons2, .deleteW{
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+hr{
+  width: 100%;
+  border-color: #ffffffe3;
+}
+
+.aside-button{
+  margin-top: 3px;
+  margin-left: 10px;
+  height: 20px;
+  width: 20px;
+  background-color: black;
+  color: #f5f5f5;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.top{
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem;
+}
+
+.statistics,
+.logExpense{
+  background-color: black;
+  color:#f5f5f5;
+  border-radius: 4px;
+  padding: 0.5rem;
+}
+
+.statistics{
+  margin-left: 500px;
+}
+
+input {
+  border: none;
+  background-color: #f5f5f5;
+}
+
+input:focus{
+  outline: #f5f5f5;
+}
+
+.nameInput{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.balanceInput{
+  font-size: 12px;
+}
+
+.walletTitle{
+  margin-top: 100px;
+  display: flex;
+  margin-left: 6%;
+}
+
+.titluWal{
+  margin-left: 10px;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.inc, 
+.exp{
+  height: 60px;
+  width: 480px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pozitionare, 
+.pozitionare1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.incAndExp{
+  width: 88%;
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem;
+  padding: 33px;
+  margin-top: -20px;
+}
+
+.titluCaseta{
+  color: #6B7280;
+  font-size: 14px;
+  font-weight: 500;
+  font: inter;
+  line-height: 20px;
+}
+
+.sumaVenituri,
+.sumaCheltuieli{
+  color: #333333;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+/*Pentru formular*/
+.blur > *:not(.modal) {
+  filter: blur(5px);
+}
+
+.blur1 > *:not(.modal1) {
+  filter: blur(5px);
+}
+
+
+.modal, .modal1{
+  position: fixed;
+  height: 60%;
+  width: 60%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: #6B7280;
+  border-radius: 20px;
+  z-index: 1000;
+  color: #f5f5f5;
+}
+
+.listaCheckBox{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.listaCheckBox > li{
+  margin-left: 10px;
+}
+
+.formular{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.formular > input{
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.submit{
+  margin-top: 20px;
+  color:#f5f5f5;
+  background-color: black;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.topForm{
+  display: flex;
+  justify-content: space-between;
+}
+
+.close-modal, .close-modal1{
+  color:#f5f5f5;
+  background-color: black;
+  border-radius: 5px;
+  width: 25px;
+}
+
+/*Istoric*/
+
+.history{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.istoricElement{
+  background-color: white;
+  width: 88%;
+  height: 50px;
+  margin-top: 10px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.03);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h5{
+  margin-left: 2rem;
+}
+
+.left, 
+.right {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 15px;
+}
+
+.left{
+  display: flex;
+  flex-direction: column;
+}
+
+.leftside{
+  display: flex;
+  margin-left: 20px;
+}
+
+.rightside{
+  display: flex;
+  align-items: center;
+  
+}
+
+.numeActiune{
+  font-weight: 500;
+}
+
+.dataCalendaristica{
+  color: #6B7280;
+  font-size: 10px;
+}
+
+/*graf*/
